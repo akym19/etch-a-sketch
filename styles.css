@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 500px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+#gridSize {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.gridContainer {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: solid 1px black;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.gridItem {
+    border: solid 1px black;
+    background-color: white;
+    border-radius: 25%;
+}
+
+#color {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+#color::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 7px solid #000000;
+}
+#color::-moz-color-swatch {
+    border-radius: 50%;
+    border: 7px solid #000000;
+}
