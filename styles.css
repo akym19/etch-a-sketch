@@ -40,8 +40,26 @@ header {
 }
 
 #gridSize {
-    font-size: 20px;
+    width: 80px;
     font-weight: 700;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#eraser, #clear {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#eraser, #clear {
+    height: 30px;
+    width: fit-content;
+    padding: 0 10px;
+    background-color: rgb(106, 106, 150);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .gridContainer {
@@ -71,9 +89,11 @@ header {
 }
 #color::-webkit-color-swatch {
     border-radius: 50%;
-    border: 7px solid #000000;
 }
 #color::-moz-color-swatch {
     border-radius: 50%;
-    border: 7px solid #000000;
+}
+
+.active {
+    background-color: black;
 }
